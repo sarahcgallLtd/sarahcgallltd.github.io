@@ -372,7 +372,7 @@ p {
   font-size: 32px;
   font-weight: 700;
   text-align: center;
-  text-shadow: var(--sg-white) 1px 1px 10px;
+  text-shadow: var(--sg-navy) 1px 1px 10px;
 }
 .name {
   white-space: pre-wrap;
@@ -405,14 +405,6 @@ p {
   }
 }
 
-/* CLIP */
-.clip {
-  background: var(--vp-home-hero-name-background);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: var(--vp-home-hero-name-color);
-}
-
 /* TAGLINE */
 .tagline {
   padding-top: 8px;
@@ -420,7 +412,7 @@ p {
   line-height: 28px;
   font-size: 18px;
   font-weight: 500;
-  color: var(--sg-grey);
+  color: var(--sg-lightgrey);
   text-align: center;
 }
 .Hero.has-image .tagline {
