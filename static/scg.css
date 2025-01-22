@@ -11,6 +11,7 @@
   --sg-grey: #8c9aa4;
   --sg-lightgrey: #f5f5f5;
   --sg-white: #ffffff;
+  --sg-opacity: rgba(255,255,255, 0.1);
   --sg-blue: #4ea2da;
   --sg-orange: #e78e47;
   --sg-navy: #20435b;
@@ -64,7 +65,8 @@ body {
   color: var(--sg-black80);
   font-size: 16px;
   line-height: 24px;
-  background-image: url("/figs/scg-home-background.png");
+  background-color: var(--sg-blue);
+  background-image: url("img/scg-home-background.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -127,12 +129,6 @@ ul {
 blockquote {
   margin: 0;
 }
-pre,
-code,
-kbd,
-samp {
-  font-family: var(--vp-font-family-mono);
-}
 img,
 svg,
 video,
@@ -171,11 +167,6 @@ button:enabled,
 [role="button"]:enabled {
   cursor: pointer;
 }
-button:focus,
-button:focus-visible {
-  outline: 1px dotted;
-  outline: 4px auto -webkit-focus-ring-color;
-}
 button:focus:not(:focus-visible) {
   outline: none !important;
 }
@@ -189,18 +180,6 @@ table {
 }
 input {
   background-color: transparent;
-}
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-  color: var(--vp-c-text-3);
-}
-input::-ms-input-placeholder,
-textarea::-ms-input-placeholder {
-  color: var(--vp-c-text-3);
-}
-input::placeholder,
-textarea::placeholder {
-  color: var(--vp-c-text-3);
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -549,9 +528,23 @@ p {
 }
 
 .homepage-card {
-  background: var(--sg-white);
+  background-color: var(--sg-opacity);
   border-radius: 10px;
-  box-shadow: 0 4px 8px 0 var(--sg-grey);
   width: 100%;
-  min-height: 300px;
+  height: 290px;
+}
+
+.hexagon-container {
+    position: relative;
+    width: max-content;
+}
+
+.hexagon {
+  position: relative;
+}
+
+.hexagon img {
+    display: block;
+    width: 126px;
+    height: auto;
 }
