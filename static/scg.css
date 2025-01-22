@@ -371,8 +371,11 @@ p {
   line-height: 40px;
   font-size: 32px;
   font-weight: 700;
-  white-space: pre-wrap;
   text-align: center;
+  text-shadow: 2px 2px var(--sg-white);
+}
+.name {
+  white-space: pre-wrap;
 }
 .Hero.has-image .name,
 .Hero.has-image .text {
@@ -418,7 +421,6 @@ p {
   line-height: 28px;
   font-size: 18px;
   font-weight: 500;
-  white-space: pre-wrap;
   color: var(--sg-lightgrey);
   text-align: center;
 }
