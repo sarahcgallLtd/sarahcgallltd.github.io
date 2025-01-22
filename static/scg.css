@@ -364,6 +364,12 @@ p {
 }
 
 /* NAME & TEXT */
+.name {
+  white-space: pre-wrap;
+}
+.text {
+  color: var(--sg-white);
+}
 .name,
 .text {
   max-width: 392px;
@@ -372,18 +378,11 @@ p {
   font-size: 32px;
   font-weight: 700;
   text-align: center;
-  text-shadow: 2px 2px var(--sg-white);
-}
-.name {
-  white-space: pre-wrap;
+  text-shadow: var(--sg-navy) 1px 1px 10px;
 }
 .Hero.has-image .name,
 .Hero.has-image .text {
   margin: 0 auto;
-}
-.text {
-  color: var(--sg-navy);
-  background-color: var(--sg-lightgrey) 0.3;
 }
 @media (min-width: 640px) {
   .name,
@@ -487,13 +486,13 @@ p {
 .image-container {
   position: relative;
   margin: 0 auto;
-  width: 320px;
-  height: 320px;
+  width: 192px;
+  height: 192px;
 }
 @media (min-width: 640px) {
   .image-container {
-    width: 392px;
-    height: 392px;
+    width: 256px;
+    height: 256px;
   }
 }
 @media (min-width: 960px) {
