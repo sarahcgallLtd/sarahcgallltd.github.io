@@ -372,7 +372,7 @@ p {
   font-size: 32px;
   font-weight: 700;
   text-align: center;
-  text-shadow: 2px 2px var(--sg-white);
+  text-shadow: var(--sg-white) 1px 1px 10px;
 }
 .name {
   white-space: pre-wrap;
@@ -382,8 +382,7 @@ p {
   margin: 0 auto;
 }
 .text {
-  color: var(--sg-navy);
-  background-color: var(--sg-lightgrey) 0.3;
+  color: var(--sg-white);
 }
 @media (min-width: 640px) {
   .name,
@@ -421,7 +420,7 @@ p {
   line-height: 28px;
   font-size: 18px;
   font-weight: 500;
-  color: var(--sg-lightgrey);
+  color: var(--sg-grey);
   text-align: center;
 }
 .Hero.has-image .tagline {
