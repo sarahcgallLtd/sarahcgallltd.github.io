@@ -372,13 +372,15 @@ p {
   font-size: 32px;
   font-weight: 700;
   white-space: pre-wrap;
+  text-align: center;
 }
 .Hero.has-image .name,
 .Hero.has-image .text {
   margin: 0 auto;
 }
 .text {
-  color: var(--sg-orange);
+  color: var(--sg-navy);
+  background-color: var(--sg-lightgrey) 0.3;
 }
 @media (min-width: 640px) {
   .name,
@@ -386,6 +388,7 @@ p {
     max-width: 576px;
     line-height: 56px;
     font-size: 48px;
+    text-align: start;
   }
 }
 @media (min-width: 960px) {
@@ -417,7 +420,7 @@ p {
   font-weight: 500;
   white-space: pre-wrap;
   color: var(--sg-lightgrey);
-  text-align: start;
+  text-align: center;
 }
 .Hero.has-image .tagline {
   margin: 0 auto;
@@ -428,7 +431,7 @@ p {
     max-width: 576px;
     line-height: 32px;
     font-size: 20px;
-    text-align: center;
+    text-align: start;
   }
 }
 @media (min-width: 960px) {
